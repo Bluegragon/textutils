@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import Introduction from './components/Introduction';
+
+ import ButtonAppBar from './components/navbar';
+// import IntroPara from './components/para1';
+// import SkillSet from './skillset';
+
+import Textutils from './pages/textutils';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <ButtonAppBar/>
+      <Introduction/>
+      <IntroPara/>
+     <SkillSet/> */}
+     <ButtonAppBar title={"TextUtils"}/>
+     <Textutils/>
     </div>
   );
 }
